@@ -27,7 +27,7 @@ def get_bot_response():
     history = request.args.get('msg[history]').strip()
     last_msg = request.args.get('msg[last_msg]')
     request.args.getlist('msg[last_msg]')
-    text = history + last_msg if REMEMBER_CHAT_HISTORY else last_msg
+    text = history + ' ' + last_msg if REMEMBER_CHAT_HISTORY else last_msg
     response_words = []
     next_words = 15
 
