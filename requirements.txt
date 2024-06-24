@@ -1,2 +1,2 @@
-tensorflow~=2.4.1
-flask~=2.2.5
+tensorflow
+flask
